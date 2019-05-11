@@ -85,7 +85,7 @@ Senpais.Functions.Create.Battle_Locomotive( 2, "Battle-Loco-2", MODNAME .. "/gra
 data.raw["locomotive"]["Battle-Loco-2"].resistances = dc( data.raw["armor"][temp].resistances )
 
 temp = "power-armor-mk2"
-Senpais.Functions.Create.Battle_Locomotive( 3, "Battle-Loco-3", MODNAME .. "/graphics/Battle-Loco-3.png", 2000, 6000, 1.6, { r = 196, g = 0, b = 74 }, "Battle-Grid-03", "transport", "a[train-system]-fbc[Battle-Loco-3]", 5, { { "Battle-Loco-2", 1 }, { temp, 1 } }, "power-armor-2" )
+Senpais.Functions.Create.Battle_Locomotive( 3, "Battle-Loco-3", MODNAME .. "/graphics/Battle-Loco-3.png", 2000, 6000, 1.6, { r = 196, g = 0, b = 74 }, "Battle-Grid-03", "transport", "a[train-system]-fbc[Battle-Loco-3]", 5, { { "Battle-Loco-2", 1 }, { temp, 1 } }, temp )
 data.raw["locomotive"]["Battle-Loco-3"].resistances = dc( data.raw["armor"][temp].resistances )
 
 if not data.raw["active-defense-equipment"]["laser-2"] then
