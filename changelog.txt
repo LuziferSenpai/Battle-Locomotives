@@ -1,13 +1,27 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.1.3
+Date: 18.06.2019
+  Fixes:
+    - Fixed a Recipe Fail
+---------------------------------------------------------------------------------------------------
+Version: 0.1.2
+Date: 17.06.2019
+  Changes:
+    - A little Code cleanup
+    - New Color Masks
+  Fixes:
+    - Migration Fix
+---------------------------------------------------------------------------------------------------
 Version: 0.1.1
 Date: 11.05.2019
-	Fixes:
-	 - Fixed Battle Locomotives, because of a Change in Factorio Vanilla
+  Fixes:
+    - Fixed Battle Locomotives, because of a Change in Factorio Vanilla
 ---------------------------------------------------------------------------------------------------
 Version 0.1.0
 Date: 27.02.2019
-	Features:
-	 - Strong Locomotives made for combat with Biters
-	 - A Grid based on there Tier
-	 - A good Defense based on there crafting Tier
-	 - A strong second Tier Personal Laser Defense
+  Features:
+    - Strong Locomotives made for combat with Biters
+    - A Grid based on there Tier
+    - A good Defense based on there crafting Tier
+    - A strong second Tier Personal Laser Defense
+    - Tier 8 & 9 Braking Force
