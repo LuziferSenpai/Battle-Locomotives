@@ -3,10 +3,16 @@ require "config"
 local m = "__Battle_Locomotives__"
 local utd = util.table.deepcopy
 
-Senpais.Functions.Create.Battle_Locomotive = function( mu, n, i, h, w, s, c, g, su, o, st, ig, t )
+Senpais.Functions.Create.Battle_Locomotive = function( mu, n, h, w, s, c, g, su, o, st, ig, t )
+	local i =
+	{
+		{ icon = m .. "/graphics/diesel-locomotive-base.png", icon_size = 32 },
+		{ icon = m .. "/graphics/diesel-locomotive-mask.png", icon_size = 32, tint = util.color( c ) }
+	}
 	local te = utd( data.raw["locomotive"]["locomotive"] )
 	te.name = n
-	te.icon = i
+	te.icon = nil
+	te.icons = i
 	te.minable.result = n
 	te.max_health = h
 	te.weight = w
@@ -25,7 +31,7 @@ Senpais.Functions.Create.Battle_Locomotive = function( mu, n, i, h, w, s, c, g, 
 		end
 	end
 
-	te.color = c
+	te.color = util.color( c )
 
 	if g ~= nil then
 		te.equipment_grid = g
@@ -33,7 +39,8 @@ Senpais.Functions.Create.Battle_Locomotive = function( mu, n, i, h, w, s, c, g, 
 
 	local ti = utd( data.raw["item-with-entity-data"]["locomotive"] )
 	ti.name = n
-	ti.icon = i
+	ti.icon = nil
+	ti.icons = i
 	ti.subgroup = su
 	ti.order = o
 	ti.place_result = n
@@ -75,11 +82,10 @@ Senpais.Functions.Create.Battle_Locomotive
 (
 	1,
 	"Battle-Loco-1",
-	m .. "/graphics/Battle-Loco-1.png",
 	1000,
 	2000,
 	1.2,
-	{ r = 213, g = 105, b = 33 },
+	"#d56921",
 	"Battle-Grid-01",
 	"transport",
 	"a[train-system]-fba[Battle-Loco-1]",
@@ -94,16 +100,15 @@ Senpais.Functions.Create.Battle_Locomotive
 (
 	2,
 	"Battle-Loco-2",
-	m .. "/graphics/Battle-Loco-2.png",
 	1500,
 	4000,
 	1.4,
-	{ r = 101, g = 33, b = 213 },
+	"#6621d5",
 	"Battle-Grid-02",
 	"transport",
 	"a[train-system]-fbb[Battle-Loco-2]",
 	5,
-	{ { "Battle-Loco-1", 1 }, { "power-armor", 1 } },
+	{ { "locomotive", 1 }, { "power-armor", 1 } },
 	"power-armor"
 )
 
@@ -113,16 +118,15 @@ Senpais.Functions.Create.Battle_Locomotive
 (
 	3,
 	"Battle-Loco-3",
-	m .. "/graphics/Battle-Loco-3.png",
 	2000,
 	6000,
 	1.6,
-	{ r = 196, g = 0, b = 74 },
+	"#c4004b",
 	"Battle-Grid-03",
 	"transport",
 	"a[train-system]-fbc[Battle-Loco-3]",
 	5,
-	{ { "Battle-Loco-2", 1 }, { "power-armor-mk2", 1 } },
+	{ { "locomotive", 1 }, { "power-armor-mk2", 1 } },
 	"power-armor-mk2"
 )
 
