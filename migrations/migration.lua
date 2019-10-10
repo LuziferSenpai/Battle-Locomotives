@@ -1,17 +1,8 @@
-game.reload_script()
+for index, force in pairs( game.forces ) do
+  	local technologies = force.technologies
+  	local recipes = force.recipes
 
-for _, f in pairs( game.forces ) do
-	f.reset_recipes()
-	f.reset_technologies()
-	local t = f.technologies
-	local r = f.recipes
-	if t["modular-armor"].researched then
-		if r["Battle-Loco-1"] then r["Battle-Loco-1"].enabled = true end
-	end
-	if t["power-armor"].researched then
-		if r["Battle-Loco-2"] then r["Battle-Loco-2"].enabled = true end
-	end
-	if t["power-armor-mk2"].researched then
-		if r["Battle-Loco-3"] then r["Battle-Loco-3"].enabled = true end
-	end
+  	recipes["Battle-Locomotive-1"].enabled = technologies["modular-armor"].researched
+  	recipes["Battle-Locomotive-3"].enabled = technologies["power-armor"].researched
+  	recipes["Battle-Locomotive-3"].enabled = technologies["power-armor-mk2"].researched
 end
