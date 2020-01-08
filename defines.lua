@@ -1,4 +1,4 @@
-local MODNAME = "__Electronic_Locomotives__"
+local MODNAME = "__Battle_Locomotives__"
 local table_deepcopy = util.table.deepcopy
 
 Senpais = Senpais or {}
