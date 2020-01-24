@@ -37,6 +37,8 @@ laser_equipment.attack_parameters =
 local laser_item = table_deepcopy( data.raw["item"]["personal-laser-defense-equipment"] )
 laser_item.name = temp01
 laser_item.icon = MODNAME .. "/graphics/" .. temp01 .. "-i.png"
+laser_item.icon_size = 32
+laser_item.icon_mipmap = nil
 laser_item.placed_as_equipment_result = temp01
 laser_item.order = "d[active-defense]-ab[" .. temp01 .. "]"
 
