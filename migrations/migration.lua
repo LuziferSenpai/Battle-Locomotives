@@ -3,6 +3,6 @@ for index, force in pairs( game.forces ) do
   	local recipes = force.recipes
 
   	recipes["Battle-Locomotive-1"].enabled = technologies["modular-armor"].researched
-  	recipes["Battle-Locomotive-3"].enabled = technologies["power-armor"].researched
+  	recipes["Battle-Locomotive-2"].enabled = technologies["power-armor"].researched
   	recipes["Battle-Locomotive-3"].enabled = technologies["power-armor-mk2"].researched
 end
