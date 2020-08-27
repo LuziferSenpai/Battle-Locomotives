@@ -1,10 +1,11 @@
 {
-  "name": "Battle_Locomotives",
-  "version": "0.2.3",
-  "title": "Battle Locomotives",
-  "author": "LuziferSenpai",
-  "contact": "mods@luzifersenpai.de",
-  "description": "Adds new Locomotives to the Game that have the same resistances values and double the Grid Size as the normal 3 Power Armors!",
-  "dependencies": ["base"],
-  "factorio_version": "0.18"
+    "name": "Battle_Locomotives",
+    "version": "1.0.0",
+    "title": "Battle Locomotives",
+    "author": "LuziferSenpai",
+    "contact": "mods@luzifersenpai.de",
+    "homepage": "luzifersenpai.de",
+    "description": "Adds 3 new locomotives for battles to the game!",
+    "dependencies": ["base"],
+    "factorio_version": "1.0"
 }
