@@ -1,11 +1,11 @@
 {
     "name": "Battle_Locomotives",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "title": "Battle Locomotives",
     "author": "LuziferSenpai",
     "contact": "mods@luzifersenpai.de",
     "homepage": "luzifersenpai.de",
     "description": "Adds 3 new locomotives for battles to the game!",
     "dependencies": ["base"],
-    "factorio_version": "1.0"
+    "factorio_version": "1.1"
 }
